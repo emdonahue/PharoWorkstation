@@ -12,7 +12,7 @@ BaselineOfPharoWorkstation >> baseline: spec [
 		do: [
 			spec
 				"Current Projects"
-				baseline: 'Fiat' with: [ spec repository: 'github://emdonahue/Fiat' ];
+				"baseline: 'Fiat' with: [ spec repository: 'github://emdonahue/Fiat' ];"
 				baseline: 'CCG' with: [ spec repository: 'github://emdonahue/CCG' ];
 				baseline: 'Barliman' with: [ spec repository: 'github://emdonahue/Barliman' ];
 
@@ -22,7 +22,7 @@ BaselineOfPharoWorkstation >> baseline: spec [
 				baseline: 'Contracts' with: [ spec repository: 'github://emdonahue/Contracts' ];			
 				baseline: 'SmallKanren' with: [ spec repository: 'github://emdonahue/SmallKanren' ];
 				
-				package: 'PharoWorkstation' with: [ spec requires: #('ABBench' 'Cons' 'Contracts' 'SmallKanren') , #('Fiat' 'CCG' 'Barliman') ]
+				package: 'PharoWorkstation' with: [ spec requires: #('ABBench' 'Cons' 'Contracts' 'SmallKanren') , #('CCG' 'Barliman') ]
 	 ]
 ]
 
